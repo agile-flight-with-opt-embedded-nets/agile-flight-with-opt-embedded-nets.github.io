@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Agile Flight with Optimization Embedded Networks">
+  <meta name="keywords" content="Robotics, Deep Learning, Differentiable Trajectory Optimization, flight vehicles, drones, quadrotors">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Agile Flight  with Optimization Embedded Networks</title>
+
+  <link rel="stylesheet" href="./static/css/cyk.css">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+
+  <link rel="icon" href="./favicon.png">
+
+
+  <script src="https://www.youtube.com/iframe_api"></script>
+</head>
+
+
+<body>
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container">
+
+      <!-- title and authors -->
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">Agile Flight  with Optimization Embedded Networks</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <p>Under Review</p>
+            </span>
+          </div>
+        </div>
+      </div>
+
+    <!-- buttons -->
+    <div class="my_columns is-centered ">      
+        <div class="column has-text-centered">
+        <div class="publication-links">
+            <!-- PDF Link. -->
+            <span class="link-block">
+            <a href="./resources/article.pdf" 
+                class="external-link button is-normal is-rounded is-dark" target="_blank">
+                <span class="icon">
+                    <i class="fas fa-file-pdf"></i>
+                </span>
+                <span>Paper</span>
+            </a>
+            </span>
+        </div>
+        </div>
+    </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="columns is-centered">
+    <div class="column is-full-width is-centered has-text-centered">
+      <img src="./static/images/pipeline.png" alt="" style="width: 50%;" />
+    </div>
+  </div>
+
+  <!-- <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-full-width is-centered has-text-centered">
+        <div class="publication-video">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/ytRQRj8PaAk?si=ubFX5oKq9VK9VP-3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div> -->
+</section>
+
+<section class="section">
+  <div class="container">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-two-thirds">
+        <h2 class="title is-2">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            To bridge the gap between perception and planning in traditional navigation systems, we address the challenge of learning optimal trajectories directly from depth information in an end-to-end fashion. Using neural networks as black-box replacements for traditional modules can compromise robustness and stability. Moreover, such methods often fail to adequately account for the robot's kinematic constraints, leading to trajectories that may not be satisfactorily executable. In this paper, we integrate the strengths of conventional methods and neural networks by introducing an optimization-embedded neural network based on a compact trajectory library. Neural networks establish spatial constraints for model-based trajectory planning, followed by robust numerical optimization to achieve feasible and optimal solutions. By making the process differentiable, our model seamlessly approximates the optimal trajectory. Additionally, the introduction of a regularized trajectory library enables the method to efficiently capture the spatial distribution of optimal trajectories with minimal storage cost, ensuring multimodal planning characteristics. Evaluations in complex, unseen environments demonstrate our method’s superior performance over state-of-the-art algorithms. Real-world flight experiments with a small onboard computer showcase the quadrotor’s ability to navigate swiftly through dense forests.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <h2 class="title is-2" style="text-align: center;">Simulation Experiments</h2>
+    <h2 class="title is-5" style="text-align: center;">(playing speed: 1x)</h2>    
+    <div class="column is-full-width is-centered has-text-centered">
+        <video controls autoplay loop muted playsinline src="./resources/sim.mp4" poster="./resources/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
+        <!-- <p>
+            The final policy
+        </p> -->
+    </div>
+      
+    <!-- <div class="columns is-centered has-text-centered">
+      <div class="column  is-5">
+        <video controls autoplay loop muted playsinline src="./resources/sim_first_only.mp4" poster="./resources/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
+        <p>
+            The first stage reward-only
+        </p>
+      </div>
+      <div class="column is-5">
+        <video controls autoplay loop muted playsinline src="./resources/sim_const.mp4" poster="./resources/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
+        <p>
+            v† = 2 m/s
+        </p>
+      </div>
+      <div class="column is-2">
+        <img src="./static/images/pic_color.png" alt="" style="width: 50%;" />
+      </div>
+    </div> -->
+
+    <!-- <div class="column">
+        <img src="./static/images/pic_label.png" alt="" style="width: 90%;" />
+    </div> -->
+    
+    <div class="column is-1"></div>
+
+    <h2 class="title is-4" style="text-align: center;">Benchmark Comparisons</h2>
+
+    <div class="columns is-centered has-text-centered">
+      <div class="column">
+          <video controls autoplay loop muted playsinline src="./resources/sim_our.mp4" poster="./resources/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
+          <p>
+              Our method
+          </p>
+      </div>
+      <div class="column">
+          <video controls autoplay loop muted playsinline src="./resources/sim_iplanner.mp4" poster="./resources/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
+          <p>
+              I-planner
+          </p>
+      </div>
+    </div>
+    
+    <div class="columns is-centered has-text-centered">
+      <div class="column">
+          <video controls autoplay loop muted playsinline src="./resources/sim_eplanner.mp4" poster="./resources/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
+          <p>
+              Ego-method
+          </p>
+      </div>
+      <div class="column">
+          <video controls autoplay loop muted playsinline src="./resources/sim_fplanner.mp4" poster="./resources/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
+          <p>
+              Fast-planner
+          </p>
+      </div>
+    </div>
+    
+
+  </div>
+</section>
+
+<section class="section">
+    <div class="container">
+      <h2 class="title is-2" style="text-align: center;">Real-World Experiments</h2>
+        
+      <h2 class="title is-5" style="text-align: center;">(playing speed: 1x)</h2>    
+      
+      <h2 class="title is-4" style="text-align: center;">Wooden Area</h2>
+      
+      <div class="column is-full-width is-centered has-text-centered">
+        <video controls autoplay loop muted playsinline src="./resources/real_0.mp4" poster="./resources/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
+        <p>
+            Case 0
+        </p>
+      </div>
+
+      <div class="columns is-centered has-text-centered">
+        <div class="column">
+          <video controls autoplay loop muted playsinline src="./resources/real_1.mp4" poster="./resources/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
+          <p>
+            Case 1
+          </p>
+        </div>
+        <div class="column">
+          <video controls autoplay loop muted playsinline src="./resources/real_2.mp4" poster="./resources/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
+          <p>
+            Case 2
+          </p>
+        </div>
+      </div>
+
+      <div class="columns is-centered has-text-centered">
+        <div class="column">
+          <video controls autoplay loop muted playsinline src="./resources/real_3.mp4" poster="./resources/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
+          <p>
+            Case 3
+          </p>
+        </div>
+        <div class="column">
+          <video controls autoplay loop muted playsinline src="./resources/real_4.mp4" poster="./resources/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
+          <p>
+            Case 4
+          </p>
+        </div>
+      </div>
+
+      <div class="columns is-centered has-text-centered">
+        <div class="column">
+          <video controls autoplay loop muted playsinline src="./resources/real_5.mp4" poster="./resources/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
+          <p>
+            Case 5
+          </p>
+        </div>
+        
+        <div class="column">
+          <video controls autoplay loop muted playsinline src="./resources/real_6.mp4" poster="./resources/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
+          <p>
+            Case 6
+          </p>
+        </div>
+        
+      </div>
+
+      <div class="columns is-centered has-text-centered">
+        <div class="column">
+          <video controls autoplay loop muted playsinline src="./resources/real_7.mp4" poster="./resources/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
+          <p>
+            Case 7
+          </p>
+        </div>
+        
+        <div class="column">
+          <video controls autoplay loop muted playsinline src="./resources/real_8.mp4" poster="./resources/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
+          <p>
+            Case 8
+          </p>
+        </div>
+      </div>
+
+      <h2 class="title is-4" style="text-align: center;">Flying with Blurred Camera</h2>
+      
+      <div class="column is-full-width is-centered has-text-centered">
+        <video controls autoplay loop muted playsinline src="./resources/robust.mp4" poster="./resources/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
+      </div>
+
+    </div>
+  </section>
+
+
+<!-- <footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      <p>Page template borrowed from <a href="https://nerfies.github.io/"><span class="dnerf">Nerfies</span></a> and <a href="https://manipulation-locomotion.github.io/"><span class="dnerf">Deep-Whole-Body-Control</span></a>.</p>
+    </div>
+  </div>
+</footer> -->
+
+</body>
+</html>
