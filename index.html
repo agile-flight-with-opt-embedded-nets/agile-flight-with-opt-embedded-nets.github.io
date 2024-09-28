@@ -25,10 +25,13 @@
 
   <link rel="icon" href="./favicon.png">
 
-
+  <style>
+    p {
+        font-size: 24px;
+    }
+  </style>
   <script src="https://www.youtube.com/iframe_api"></script>
 </head>
-
 
 <body>
 
@@ -48,23 +51,23 @@
         </div>
       </div>
 
-    <!-- buttons -->
-    <div class="my_columns is-centered ">      
-        <div class="column has-text-centered">
-        <div class="publication-links">
-            <!-- PDF Link. -->
-            <span class="link-block">
-            <a href="./resources/article.pdf" 
-                class="external-link button is-normal is-rounded is-dark" target="_blank">
-                <span class="icon">
-                    <i class="fas fa-file-pdf"></i>
+      <!-- buttons -->
+      <!-- <div class="my_columns is-centered ">      
+          <div class="column has-text-centered">
+            <div class="publication-links">
+                <span class="link-block">
+                <a href="./resources/article.pdf" 
+                    class="external-link button is-normal is-rounded is-dark" target="_blank">
+                    <span class="icon">
+                        <i class="fas fa-file-pdf"></i>
+                    </span>
+                    <span>Paper</span>
+                </a>
                 </span>
-                <span>Paper</span>
-            </a>
-            </span>
-        </div>
-        </div>
-    </div>
+            </div>
+          </div>
+      </div> -->
+      
     </div>
   </div>
 </section>
@@ -107,70 +110,36 @@
   <div class="container">
     <h2 class="title is-2" style="text-align: center;">Simulation Experiments</h2>
     <h2 class="title is-5" style="text-align: center;">(playing speed: 1x)</h2>    
-    <div class="column is-full-width is-centered has-text-centered">
-        <video controls autoplay loop muted playsinline src="./resources/sim.mp4" poster="./resources/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
-        <!-- <p>
-            The final policy
-        </p> -->
-    </div>
       
-    <!-- <div class="columns is-centered has-text-centered">
-      <div class="column  is-5">
-        <video controls autoplay loop muted playsinline src="./resources/sim_first_only.mp4" poster="./resources/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
-        <p>
-            The first stage reward-only
-        </p>
-      </div>
-      <div class="column is-5">
-        <video controls autoplay loop muted playsinline src="./resources/sim_const.mp4" poster="./resources/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
-        <p>
-            v† = 2 m/s
-        </p>
-      </div>
-      <div class="column is-2">
-        <img src="./static/images/pic_color.png" alt="" style="width: 50%;" />
-      </div>
-    </div> -->
-
-    <!-- <div class="column">
-        <img src="./static/images/pic_label.png" alt="" style="width: 90%;" />
-    </div> -->
-    
     <div class="column is-1"></div>
 
     <h2 class="title is-4" style="text-align: center;">Benchmark Comparisons</h2>
+    <h2 class="title is-4" style="text-align: center;">Maximal speed: 8 m/s; Maximal acceleration: 10 m/s<sup>2</sup></h2>
 
     <div class="columns is-centered has-text-centered">
       <div class="column">
-          <video controls autoplay loop muted playsinline src="./resources/sim_our.mp4" poster="./resources/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
-          <p>
-              Our method
-          </p>
-      </div>
-      <div class="column">
-          <video controls autoplay loop muted playsinline src="./resources/sim_iplanner.mp4" poster="./resources/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
-          <p>
-              I-planner
-          </p>
-      </div>
-    </div>
-    
-    <div class="columns is-centered has-text-centered">
-      <div class="column">
-          <video controls autoplay loop muted playsinline src="./resources/sim_eplanner.mp4" poster="./resources/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
+          <video controls autoplay loop muted playsinline src="./resources/ego.mp4" poster="./resources/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
           <p>
               Ego-method
           </p>
       </div>
       <div class="column">
-          <video controls autoplay loop muted playsinline src="./resources/sim_fplanner.mp4" poster="./resources/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
+        <video controls autoplay loop muted playsinline src="./resources/iplanner.mp4" poster="./resources/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
+        <p>
+            I-planner
+        </p>
+      </div>
+    </div>
+
+    <div class="columns is-centered has-text-centered">
+      <div class="column">
+          <video controls autoplay loop muted playsinline src="./resources/proposed.mp4" poster="./resources/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
           <p>
-              Fast-planner
+              Our method
           </p>
       </div>
     </div>
     
-
   </div>
 </section>
 
@@ -181,6 +150,7 @@
       <h2 class="title is-5" style="text-align: center;">(playing speed: 1x)</h2>    
       
       <h2 class="title is-4" style="text-align: center;">Wooden Area</h2>
+      <h2 class="title is-4" style="text-align: center;">Maximal speed: 5 m/s; Maximal acceleration: 6 m/s<sup>2</sup></h2>
       
       <div class="column is-full-width is-centered has-text-centered">
         <video controls autoplay loop muted playsinline src="./resources/real_0.mp4" poster="./resources/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
@@ -252,7 +222,8 @@
         </div>
       </div>
 
-      <h2 class="title is-4" style="text-align: center;">Flying with Blurred Camera</h2>
+      <h2 class="title is-4" style="text-align: center;">Flying with Blurred Camera (maximal speed: 5 m/s, maximal acceleration: 6 m/s<sup>2</sup>)</h2>
+      <h2 class="title is-4" style="text-align: center;">Maximal speed: 5 m/s; Maximal acceleration: 6 m/s<sup>2</sup></h2>
       
       <div class="column is-full-width is-centered has-text-centered">
         <video controls autoplay loop muted playsinline src="./resources/robust.mp4" poster="./resources/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
